@@ -1,5 +1,8 @@
 # coding=utf-8
 import random
+import sys
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 team = []
 mid_lane = []
@@ -33,3 +36,15 @@ print('中路單挑賽:')
 for i in range(0,len(mid_lane)):
 	print(i+1)
 	print(mid_lane[i])
+
+
+#write result to file
+f = open('Result_Team.txt','a')
+for i in range(len(team)):
+	f.write(team[i])
+f.close()
+
+f = open('Result_MidLane.txt','a')
+for i in range(len(mid_lane)):
+	f.write(mid_lane[i])
+f.close()
