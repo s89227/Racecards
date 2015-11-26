@@ -35,3 +35,5 @@ f = open('Result_MidLane.txt','a')
 for i in range(len(mid_lane)):
 	f.write('%d. %s' % (i+1, mid_lane[i]))
 f.close()
+
+print('抽籤完成!')
