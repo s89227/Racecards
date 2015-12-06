@@ -20,7 +20,7 @@ for name in f.readlines():
 f.close()
 
 
-#suffle
+#shuffle
 """random.shuffle(team)"""
 random.shuffle(mid_lane)
 
